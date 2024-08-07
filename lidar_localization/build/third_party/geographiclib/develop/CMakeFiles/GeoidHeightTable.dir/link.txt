@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -Wextra -Wfloat-conversion -Werror  -O3 -Wall    -fopenmp CMakeFiles/GeoidHeightTable.dir/GeoidHeightTable.cpp.o  -o GeoidHeightTable  -Wl,-rpath,/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/build/third_party/geographiclib/src ../src/libGeographicLib.so.26.1.0 /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.so /usr/lib/x86_64-linux-gnu/libpthread.so 

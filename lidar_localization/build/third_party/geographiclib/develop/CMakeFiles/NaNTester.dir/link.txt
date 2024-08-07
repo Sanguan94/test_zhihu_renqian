@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -Wextra -Wfloat-conversion -Werror  -O3 -Wall    CMakeFiles/NaNTester.dir/NaNTester.cpp.o  -o NaNTester  -Wl,-rpath,/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/build/third_party/geographiclib/src ../src/libGeographicLib.so.26.1.0 

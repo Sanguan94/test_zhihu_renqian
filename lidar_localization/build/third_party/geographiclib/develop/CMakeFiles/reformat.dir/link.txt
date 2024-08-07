@@ -1,0 +1,1 @@
+/usr/bin/c++    -Wall -Wextra -Wfloat-conversion -Werror  -O3 -Wall    CMakeFiles/reformat.dir/reformat.cpp.o  -o reformat 

@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/local/include/GeographicLib/**",
+                "/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/include/lidar_localization/**",
+                "/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/**",
+                "/usr/local/include/**",
+                "/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/**",
+                "/usr/include/**",
+                "/usr/include/pcl-1.10/**",
+                "/opt/ros/noetic/include/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c17",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
