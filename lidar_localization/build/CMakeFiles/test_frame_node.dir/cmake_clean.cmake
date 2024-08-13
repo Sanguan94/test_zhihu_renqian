@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/test_frame_node.dir/src/front_end/front_end.cpp.o"
   "CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o"
   "CMakeFiles/test_frame_node.dir/src/publisher/odometry_publisher.cpp.o"
   "CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.o"

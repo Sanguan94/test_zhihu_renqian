@@ -19,8 +19,8 @@ find_package(catkin REQUIRED COMPONENTS
   rospy
   geometry_msgs
   eigen_conversions
+  
 )
-
 
 set(ALL_TARGET_LIBRARIES "")
 
@@ -53,6 +53,7 @@ add_executable(test_frame_node src/test_frame_node.cpp ${ALL_SRCS})
 target_link_libraries(test_frame_node
   ${catkin_LIBRARIES}
   ${ALL_TARGET_LIBRARIES}
+  ${PCL_LIBRARIES}
   Threads::Threads
 )
 find_package(OpenMP REQUIRED)
@@ -61,3 +62,5 @@ if(OpenMP_CXX_FOUND)
 endif()
 
 
+add_executable(front_end_node src/front_end_node.cpp ${ALL_SRCS})
+target_link_libraries(front_end_node ${catkin_LIBRARIES} ${ALL_TARGET_LIBRARIES})

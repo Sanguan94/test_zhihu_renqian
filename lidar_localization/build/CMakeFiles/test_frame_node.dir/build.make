@@ -70,9 +70,22 @@ CMakeFiles/test_frame_node.dir/src/test_frame_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_frame_node.dir/src/test_frame_node.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/src/test_frame_node.cpp -o CMakeFiles/test_frame_node.dir/src/test_frame_node.cpp.s
 
+CMakeFiles/test_frame_node.dir/src/front_end/front_end.cpp.o: CMakeFiles/test_frame_node.dir/flags.make
+CMakeFiles/test_frame_node.dir/src/front_end/front_end.cpp.o: ../src/front_end/front_end.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_frame_node.dir/src/front_end/front_end.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_frame_node.dir/src/front_end/front_end.cpp.o -c /home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/src/front_end/front_end.cpp
+
+CMakeFiles/test_frame_node.dir/src/front_end/front_end.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test_frame_node.dir/src/front_end/front_end.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/src/front_end/front_end.cpp > CMakeFiles/test_frame_node.dir/src/front_end/front_end.cpp.i
+
+CMakeFiles/test_frame_node.dir/src/front_end/front_end.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test_frame_node.dir/src/front_end/front_end.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/src/front_end/front_end.cpp -o CMakeFiles/test_frame_node.dir/src/front_end/front_end.cpp.s
+
 CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o: CMakeFiles/test_frame_node.dir/flags.make
 CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o: ../src/publisher/cloud_publisher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o -c /home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/src/publisher/cloud_publisher.cpp
 
 CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.i: cmake_force
@@ -85,7 +98,7 @@ CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.s: cmake_force
 
 CMakeFiles/test_frame_node.dir/src/publisher/odometry_publisher.cpp.o: CMakeFiles/test_frame_node.dir/flags.make
 CMakeFiles/test_frame_node.dir/src/publisher/odometry_publisher.cpp.o: ../src/publisher/odometry_publisher.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test_frame_node.dir/src/publisher/odometry_publisher.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test_frame_node.dir/src/publisher/odometry_publisher.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_frame_node.dir/src/publisher/odometry_publisher.cpp.o -c /home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/src/publisher/odometry_publisher.cpp
 
 CMakeFiles/test_frame_node.dir/src/publisher/odometry_publisher.cpp.i: cmake_force
@@ -98,7 +111,7 @@ CMakeFiles/test_frame_node.dir/src/publisher/odometry_publisher.cpp.s: cmake_for
 
 CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.o: CMakeFiles/test_frame_node.dir/flags.make
 CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.o: ../src/sensor_data/gnss_data.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.o -c /home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/src/sensor_data/gnss_data.cpp
 
 CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.i: cmake_force
@@ -111,7 +124,7 @@ CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.s: cmake_force
 
 CMakeFiles/test_frame_node.dir/src/subscriber/_imu_subscriber.cpp.o: CMakeFiles/test_frame_node.dir/flags.make
 CMakeFiles/test_frame_node.dir/src/subscriber/_imu_subscriber.cpp.o: ../src/subscriber/\ imu_subscriber.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test_frame_node.dir/src/subscriber/_imu_subscriber.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test_frame_node.dir/src/subscriber/_imu_subscriber.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_frame_node.dir/src/subscriber/_imu_subscriber.cpp.o -c "/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/src/subscriber/ imu_subscriber.cpp"
 
 CMakeFiles/test_frame_node.dir/src/subscriber/_imu_subscriber.cpp.i: cmake_force
@@ -124,7 +137,7 @@ CMakeFiles/test_frame_node.dir/src/subscriber/_imu_subscriber.cpp.s: cmake_force
 
 CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscriber.cpp.o: CMakeFiles/test_frame_node.dir/flags.make
 CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscriber.cpp.o: ../src/subscriber/cloud_subscriber.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscriber.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscriber.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscriber.cpp.o -c /home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/src/subscriber/cloud_subscriber.cpp
 
 CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscriber.cpp.i: cmake_force
@@ -137,7 +150,7 @@ CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscriber.cpp.s: cmake_forc
 
 CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber.cpp.o: CMakeFiles/test_frame_node.dir/flags.make
 CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber.cpp.o: ../src/subscriber/gnss_subscriber.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber.cpp.o -c /home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/src/subscriber/gnss_subscriber.cpp
 
 CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber.cpp.i: cmake_force
@@ -150,7 +163,7 @@ CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber.cpp.s: cmake_force
 
 CMakeFiles/test_frame_node.dir/src/tf_lisener/tf_lisener.cpp.o: CMakeFiles/test_frame_node.dir/flags.make
 CMakeFiles/test_frame_node.dir/src/tf_lisener/tf_lisener.cpp.o: ../src/tf_lisener/tf_lisener.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test_frame_node.dir/src/tf_lisener/tf_lisener.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/test_frame_node.dir/src/tf_lisener/tf_lisener.cpp.o"
 	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/test_frame_node.dir/src/tf_lisener/tf_lisener.cpp.o -c /home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/src/tf_lisener/tf_lisener.cpp
 
 CMakeFiles/test_frame_node.dir/src/tf_lisener/tf_lisener.cpp.i: cmake_force
@@ -164,6 +177,7 @@ CMakeFiles/test_frame_node.dir/src/tf_lisener/tf_lisener.cpp.s: cmake_force
 # Object files for target test_frame_node
 test_frame_node_OBJECTS = \
 "CMakeFiles/test_frame_node.dir/src/test_frame_node.cpp.o" \
+"CMakeFiles/test_frame_node.dir/src/front_end/front_end.cpp.o" \
 "CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o" \
 "CMakeFiles/test_frame_node.dir/src/publisher/odometry_publisher.cpp.o" \
 "CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.o" \
@@ -176,6 +190,7 @@ test_frame_node_OBJECTS = \
 test_frame_node_EXTERNAL_OBJECTS =
 
 devel/lib/lidar_localization/test_frame_node: CMakeFiles/test_frame_node.dir/src/test_frame_node.cpp.o
+devel/lib/lidar_localization/test_frame_node: CMakeFiles/test_frame_node.dir/src/front_end/front_end.cpp.o
 devel/lib/lidar_localization/test_frame_node: CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o
 devel/lib/lidar_localization/test_frame_node: CMakeFiles/test_frame_node.dir/src/publisher/odometry_publisher.cpp.o
 devel/lib/lidar_localization/test_frame_node: CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.o
@@ -303,6 +318,20 @@ devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libboost
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libglog.so
+devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
+devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
+devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libqhull.so
+devel/lib/lidar_localization/test_frame_node: /usr/lib/libOpenNI.so
+devel/lib/lidar_localization/test_frame_node: /usr/lib/libOpenNI2.so
+devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libfreetype.so
+devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libz.so
+devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libjpeg.so
+devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libpng.so
+devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libtiff.so
+devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libexpat.so
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libpcl_apps.so
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libpcl_people.so
@@ -331,7 +360,6 @@ devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libvtkVi
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libvtkRenderingContextOpenGL2-7.1.so.7.1p.1
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libvtkRenderingOpenGL2-7.1.so.7.1p.1
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
-devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libqhull.so
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libflann_cpp.so
 devel/lib/lidar_localization/test_frame_node: /opt/ros/noetic/lib/libdynamic_reconfigure_config_init_mutex.so
 devel/lib/lidar_localization/test_frame_node: /opt/ros/noetic/lib/libnodeletlib.so
@@ -340,11 +368,6 @@ devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libuuid.
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libpcl_common.so
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libpcl_octree.so
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libpcl_io.so
-devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
-devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libboost_iostreams.so
-devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libvtkChartsCore-7.1.so.7.1p.1
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libvtkCommonColor-7.1.so.7.1p.1
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libvtkCommonCore-7.1.so.7.1p.1
@@ -430,8 +453,6 @@ devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libboost
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so.1.71.0
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libglog.so
-devel/lib/lidar_localization/test_frame_node: /usr/lib/libOpenNI.so
-devel/lib/lidar_localization/test_frame_node: /usr/lib/libOpenNI2.so
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libpcl_surface.so
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so
@@ -499,7 +520,7 @@ devel/lib/lidar_localization/test_frame_node: third_party/geographiclib/src/libG
 devel/lib/lidar_localization/test_frame_node: /usr/lib/gcc/x86_64-linux-gnu/9/libgomp.so
 devel/lib/lidar_localization/test_frame_node: /usr/lib/x86_64-linux-gnu/libpthread.so
 devel/lib/lidar_localization/test_frame_node: CMakeFiles/test_frame_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable devel/lib/lidar_localization/test_frame_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable devel/lib/lidar_localization/test_frame_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_frame_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

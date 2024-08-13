@@ -11,7 +11,8 @@
                 "/home/user_sanguan/work/my_zhihu/ws/src/lidar_localization/**",
                 "/usr/include/**",
                 "/usr/include/pcl-1.10/**",
-                "/opt/ros/noetic/include/**"
+                "/opt/ros/noetic/include/**",
+                "/usr/include/linux/**"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

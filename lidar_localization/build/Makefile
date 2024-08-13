@@ -137,8 +137,8 @@ install/fast: preinstall/fast
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -188,6 +188,19 @@ preinstall/fast:
 depend:
 	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
+
+#=============================================================================
+# Target rules for targets named front_end_node
+
+# Build rule for target.
+front_end_node: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 front_end_node
+.PHONY : front_end_node
+
+# fast build rule for target.
+front_end_node/fast:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/build
+.PHONY : front_end_node/fast
 
 #=============================================================================
 # Target rules for targets named tf2_msgs_generate_messages_nodejs
@@ -2126,12 +2139,70 @@ NormalTest/fast:
 	$(MAKE) -f third_party/geographiclib/develop/CMakeFiles/NormalTest.dir/build.make third_party/geographiclib/develop/CMakeFiles/NormalTest.dir/build
 .PHONY : NormalTest/fast
 
+src/front_end/front_end.o: src/front_end/front_end.cpp.o
+
+.PHONY : src/front_end/front_end.o
+
+# target to build an object file
+src/front_end/front_end.cpp.o:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/front_end/front_end.cpp.o
+	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/front_end/front_end.cpp.o
+.PHONY : src/front_end/front_end.cpp.o
+
+src/front_end/front_end.i: src/front_end/front_end.cpp.i
+
+.PHONY : src/front_end/front_end.i
+
+# target to preprocess a source file
+src/front_end/front_end.cpp.i:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/front_end/front_end.cpp.i
+	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/front_end/front_end.cpp.i
+.PHONY : src/front_end/front_end.cpp.i
+
+src/front_end/front_end.s: src/front_end/front_end.cpp.s
+
+.PHONY : src/front_end/front_end.s
+
+# target to generate assembly for a file
+src/front_end/front_end.cpp.s:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/front_end/front_end.cpp.s
+	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/front_end/front_end.cpp.s
+.PHONY : src/front_end/front_end.cpp.s
+
+src/front_end_node.o: src/front_end_node.cpp.o
+
+.PHONY : src/front_end_node.o
+
+# target to build an object file
+src/front_end_node.cpp.o:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/front_end_node.cpp.o
+.PHONY : src/front_end_node.cpp.o
+
+src/front_end_node.i: src/front_end_node.cpp.i
+
+.PHONY : src/front_end_node.i
+
+# target to preprocess a source file
+src/front_end_node.cpp.i:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/front_end_node.cpp.i
+.PHONY : src/front_end_node.cpp.i
+
+src/front_end_node.s: src/front_end_node.cpp.s
+
+.PHONY : src/front_end_node.s
+
+# target to generate assembly for a file
+src/front_end_node.cpp.s:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/front_end_node.cpp.s
+.PHONY : src/front_end_node.cpp.s
+
 src/publisher/cloud_publisher.o: src/publisher/cloud_publisher.cpp.o
 
 .PHONY : src/publisher/cloud_publisher.o
 
 # target to build an object file
 src/publisher/cloud_publisher.cpp.o:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/publisher/cloud_publisher.cpp.o
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.o
 .PHONY : src/publisher/cloud_publisher.cpp.o
 
@@ -2141,6 +2212,7 @@ src/publisher/cloud_publisher.i: src/publisher/cloud_publisher.cpp.i
 
 # target to preprocess a source file
 src/publisher/cloud_publisher.cpp.i:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/publisher/cloud_publisher.cpp.i
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.i
 .PHONY : src/publisher/cloud_publisher.cpp.i
 
@@ -2150,6 +2222,7 @@ src/publisher/cloud_publisher.s: src/publisher/cloud_publisher.cpp.s
 
 # target to generate assembly for a file
 src/publisher/cloud_publisher.cpp.s:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/publisher/cloud_publisher.cpp.s
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/publisher/cloud_publisher.cpp.s
 .PHONY : src/publisher/cloud_publisher.cpp.s
 
@@ -2159,6 +2232,7 @@ src/publisher/odometry_publisher.o: src/publisher/odometry_publisher.cpp.o
 
 # target to build an object file
 src/publisher/odometry_publisher.cpp.o:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/publisher/odometry_publisher.cpp.o
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/publisher/odometry_publisher.cpp.o
 .PHONY : src/publisher/odometry_publisher.cpp.o
 
@@ -2168,6 +2242,7 @@ src/publisher/odometry_publisher.i: src/publisher/odometry_publisher.cpp.i
 
 # target to preprocess a source file
 src/publisher/odometry_publisher.cpp.i:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/publisher/odometry_publisher.cpp.i
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/publisher/odometry_publisher.cpp.i
 .PHONY : src/publisher/odometry_publisher.cpp.i
 
@@ -2177,6 +2252,7 @@ src/publisher/odometry_publisher.s: src/publisher/odometry_publisher.cpp.s
 
 # target to generate assembly for a file
 src/publisher/odometry_publisher.cpp.s:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/publisher/odometry_publisher.cpp.s
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/publisher/odometry_publisher.cpp.s
 .PHONY : src/publisher/odometry_publisher.cpp.s
 
@@ -2186,6 +2262,7 @@ src/sensor_data/gnss_data.o: src/sensor_data/gnss_data.cpp.o
 
 # target to build an object file
 src/sensor_data/gnss_data.cpp.o:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/sensor_data/gnss_data.cpp.o
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.o
 .PHONY : src/sensor_data/gnss_data.cpp.o
 
@@ -2195,6 +2272,7 @@ src/sensor_data/gnss_data.i: src/sensor_data/gnss_data.cpp.i
 
 # target to preprocess a source file
 src/sensor_data/gnss_data.cpp.i:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/sensor_data/gnss_data.cpp.i
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.i
 .PHONY : src/sensor_data/gnss_data.cpp.i
 
@@ -2204,6 +2282,7 @@ src/sensor_data/gnss_data.s: src/sensor_data/gnss_data.cpp.s
 
 # target to generate assembly for a file
 src/sensor_data/gnss_data.cpp.s:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/sensor_data/gnss_data.cpp.s
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/sensor_data/gnss_data.cpp.s
 .PHONY : src/sensor_data/gnss_data.cpp.s
 
@@ -2213,6 +2292,7 @@ src/subscriber/_imu_subscriber.o: src/subscriber/_imu_subscriber.cpp.o
 
 # target to build an object file
 src/subscriber/_imu_subscriber.cpp.o:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/subscriber/_imu_subscriber.cpp.o
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/subscriber/_imu_subscriber.cpp.o
 .PHONY : src/subscriber/_imu_subscriber.cpp.o
 
@@ -2222,6 +2302,7 @@ src/subscriber/_imu_subscriber.i: src/subscriber/_imu_subscriber.cpp.i
 
 # target to preprocess a source file
 src/subscriber/_imu_subscriber.cpp.i:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/subscriber/_imu_subscriber.cpp.i
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/subscriber/_imu_subscriber.cpp.i
 .PHONY : src/subscriber/_imu_subscriber.cpp.i
 
@@ -2231,6 +2312,7 @@ src/subscriber/_imu_subscriber.s: src/subscriber/_imu_subscriber.cpp.s
 
 # target to generate assembly for a file
 src/subscriber/_imu_subscriber.cpp.s:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/subscriber/_imu_subscriber.cpp.s
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/subscriber/_imu_subscriber.cpp.s
 .PHONY : src/subscriber/_imu_subscriber.cpp.s
 
@@ -2240,6 +2322,7 @@ src/subscriber/cloud_subscriber.o: src/subscriber/cloud_subscriber.cpp.o
 
 # target to build an object file
 src/subscriber/cloud_subscriber.cpp.o:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/subscriber/cloud_subscriber.cpp.o
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscriber.cpp.o
 .PHONY : src/subscriber/cloud_subscriber.cpp.o
 
@@ -2249,6 +2332,7 @@ src/subscriber/cloud_subscriber.i: src/subscriber/cloud_subscriber.cpp.i
 
 # target to preprocess a source file
 src/subscriber/cloud_subscriber.cpp.i:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/subscriber/cloud_subscriber.cpp.i
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscriber.cpp.i
 .PHONY : src/subscriber/cloud_subscriber.cpp.i
 
@@ -2258,6 +2342,7 @@ src/subscriber/cloud_subscriber.s: src/subscriber/cloud_subscriber.cpp.s
 
 # target to generate assembly for a file
 src/subscriber/cloud_subscriber.cpp.s:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/subscriber/cloud_subscriber.cpp.s
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/subscriber/cloud_subscriber.cpp.s
 .PHONY : src/subscriber/cloud_subscriber.cpp.s
 
@@ -2267,6 +2352,7 @@ src/subscriber/gnss_subscriber.o: src/subscriber/gnss_subscriber.cpp.o
 
 # target to build an object file
 src/subscriber/gnss_subscriber.cpp.o:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/subscriber/gnss_subscriber.cpp.o
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber.cpp.o
 .PHONY : src/subscriber/gnss_subscriber.cpp.o
 
@@ -2276,6 +2362,7 @@ src/subscriber/gnss_subscriber.i: src/subscriber/gnss_subscriber.cpp.i
 
 # target to preprocess a source file
 src/subscriber/gnss_subscriber.cpp.i:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/subscriber/gnss_subscriber.cpp.i
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber.cpp.i
 .PHONY : src/subscriber/gnss_subscriber.cpp.i
 
@@ -2285,6 +2372,7 @@ src/subscriber/gnss_subscriber.s: src/subscriber/gnss_subscriber.cpp.s
 
 # target to generate assembly for a file
 src/subscriber/gnss_subscriber.cpp.s:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/subscriber/gnss_subscriber.cpp.s
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/subscriber/gnss_subscriber.cpp.s
 .PHONY : src/subscriber/gnss_subscriber.cpp.s
 
@@ -2321,6 +2409,7 @@ src/tf_lisener/tf_lisener.o: src/tf_lisener/tf_lisener.cpp.o
 
 # target to build an object file
 src/tf_lisener/tf_lisener.cpp.o:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/tf_lisener/tf_lisener.cpp.o
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/tf_lisener/tf_lisener.cpp.o
 .PHONY : src/tf_lisener/tf_lisener.cpp.o
 
@@ -2330,6 +2419,7 @@ src/tf_lisener/tf_lisener.i: src/tf_lisener/tf_lisener.cpp.i
 
 # target to preprocess a source file
 src/tf_lisener/tf_lisener.cpp.i:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/tf_lisener/tf_lisener.cpp.i
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/tf_lisener/tf_lisener.cpp.i
 .PHONY : src/tf_lisener/tf_lisener.cpp.i
 
@@ -2339,6 +2429,7 @@ src/tf_lisener/tf_lisener.s: src/tf_lisener/tf_lisener.cpp.s
 
 # target to generate assembly for a file
 src/tf_lisener/tf_lisener.cpp.s:
+	$(MAKE) -f CMakeFiles/front_end_node.dir/build.make CMakeFiles/front_end_node.dir/src/tf_lisener/tf_lisener.cpp.s
 	$(MAKE) -f CMakeFiles/test_frame_node.dir/build.make CMakeFiles/test_frame_node.dir/src/tf_lisener/tf_lisener.cpp.s
 .PHONY : src/tf_lisener/tf_lisener.cpp.s
 
@@ -2354,6 +2445,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... package_source"
 	@echo "... package"
+	@echo "... front_end_node"
 	@echo "... tf2_msgs_generate_messages_nodejs"
 	@echo "... tf2_msgs_generate_messages_lisp"
 	@echo "... _catkin_empty_exported_target"
@@ -2506,6 +2598,12 @@ help:
 	@echo "... GeodShort"
 	@echo "... GeodTest"
 	@echo "... NormalTest"
+	@echo "... src/front_end/front_end.o"
+	@echo "... src/front_end/front_end.i"
+	@echo "... src/front_end/front_end.s"
+	@echo "... src/front_end_node.o"
+	@echo "... src/front_end_node.i"
+	@echo "... src/front_end_node.s"
 	@echo "... src/publisher/cloud_publisher.o"
 	@echo "... src/publisher/cloud_publisher.i"
 	@echo "... src/publisher/cloud_publisher.s"
